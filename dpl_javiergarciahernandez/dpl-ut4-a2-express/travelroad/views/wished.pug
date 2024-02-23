@@ -1,0 +1,7 @@
+block content
+  h1= "My Travel Bucket List"
+  h2= "Places I'd Like to Visit"
+  ul
+    each place in wished
+      li= place.name
+  a(href='/')= "Back to home"

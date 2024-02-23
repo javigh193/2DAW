@@ -1,0 +1,60 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>UT 7 - Ejercicio 4 - Listas desplegables encadenadas</title>
+<script type="text/javascript" src="/medusa/eforma/campus/ruxitagentjs_ICA2NVfqru_10281231207105659.js" data-dtconfig="rid=RID_-1472779791|rpid=-86401677|domain=gobiernodecanarias.org|reportUrl=/medusa/eforma/campus/rb_bf29001mpg|app=6f32243ee21d715c|cuc=o9ygw9x5|mel=100000|featureHash=ICA2NVfqru|dpvc=1|ssv=4|lastModification=1705480711519|vcv=2|tp=500,50,0,1|rdnt=1|uxrgce=1|bp=3|agentUri=/medusa/eforma/campus/ruxitagentjs_ICA2NVfqru_10281231207105659.js"></script><script src="miIndex.js"></script>
+<link rel="stylesheet" type="text/css" href="https://www3.gobiernodecanarias.org/educacion/cau_ce/cookies/cookieconsent.min.css"/><script  type="text/javascript" src="https://www3.gobiernodecanarias.org/educacion/cau_ce/cookies/cookieconsent.min.js"></script><script type="text/javascript" src="https://www3.gobiernodecanarias.org/educacion/cau_ce/cookies/cauce_cookie.js"></script><script type="text/javascript" src="https://www3.gobiernodecanarias.org/educacion/cau_ce/estadisticasweb/scripts/piwik-base.js"></script><script type="text/javascript" src="https://www3.gobiernodecanarias.org/educacion/cau_ce/estadisticasweb/scripts/piwik-eforma.js"></script>
+</head>
+<body>
+<h1>Listas desplegables encadenadas</h1>
+
+<form>
+  <label for="provincia">Provincia</label>
+  <select id="provincia">
+    <option>Cargando...</option>
+  </select>
+  <br/><br/>
+  <label for="municipio">Municipio</label>
+  <select id="municipio">
+    <option>- selecciona una provincia -</option>
+  </select>
+</form>
+<script>
+	let xhr = new XMLHttpRequest();
+	xhr.open('GET', 'cargaProvinciasXML.php', false);
+	xhr.send();
+	let provincias = xhr.responseXML.getElementsByTagName("provincia");
+	let select = document.getElementById("provincia"); 
+	for (let i=0; i < provincias.length; i++) {
+		let new_option = new Option(
+			provincias[i].getElementsByTagName("nombre")[0].firstChild.nodeValue, 
+			provincias[i].getElementsByTagName("codigo")[0].firstChild.nodeValue
+		);
+		select.options.add(new_option);
+	};
+	select.options[0].innerHTML = 'Escoja una provincia';
+	select.addEventListener("change", () => {
+		let xhr = new XMLHttpRequest();
+		xhr.open('POST', 'cargaMunicipiosXML.php', true);
+		let target_index = document.getElementById("provincia").selectedIndex;
+		let target =  document.getElementById("provincia").options[target_index].value;
+		xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+		let payload = `provincia=${target}`;
+		xhr.onreadystatechange = function() {
+			let new_options = '';
+			if(xhr.readyState === 4 && xhr.status === 200) {
+				let municipios = xhr.responseXML.getElementsByTagName("municipio");
+				for (let i=0; i < municipios.length; i++) {
+					new_options += `<option value=${municipios[i].getElementsByTagName("codigo")[0].firstChild.nodeValue}>
+								${municipios[i].getElementsByTagName("nombre")[0].firstChild.nodeValue}
+	              					</option>`
+				};
+			};
+			document.getElementById("municipio").innerHTML = new_options;
+		};
+		xhr.send(payload);	
+	});
+</script>
+</body>
+</html>

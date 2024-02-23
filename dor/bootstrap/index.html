@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+    <html lang="en">
+        <head>
+            <title>Ejercicios Bootstrap-Grid</title>
+            <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+            <link rel="stylesheet" type="text/css" href="styles.css">
+        </head>
+        <body>
+            <div class="row p-4 text-center">
+                <h2>Ejercicio Grid 1</h2>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="border col-12 red height-4"></div>
+                    <div class="border col-sm-3 blue height-4"></div>
+                    <div class="border col-sm-9 lime height-4"></div>
+                </div>
+            </div>
+            <div class="row p-4 text-center">
+                <h2>Ejercicio Grid 2</h2>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 lime height-4"></div>
+                </div>
+                <div class="row">
+                    <div class="border col-12 col-sm-3 col-md-2 red height-fluid"></div>
+                    <div class="col-12 col-sm-9 col-md-10">
+                        <div class="row">
+                            <div class="border col-12 pink-bg height-4" ></div>
+                            <div class="border col-12 col-sm-6 sandybrown height-16"></div>
+                            <div class="border col-12 col-sm-6 sandybrown height-16"></div>
+                        </div>
+                        <div class="row">
+                            <div class="border col-6 col-sm-4 col-md-2 blue height-8"></div>
+                            <div class="border col-6 col-sm-4 col-md-2 blue height-8"></div>
+                            <div class="border col-6 col-sm-4 blue height-8"></div>
+                            <div class="border col-6 col-sm-4 col-md-2 blue height-8"></div>
+                            <div class="border col-6 col-sm-4 col-md-2 blue height-8"></div>
+                            <div class="border col-6 col-sm-4 col-md-2 blue height-8"></div>
+                            <div class="border col-6 col-sm-4 col-md-2 blue height-8"></div>
+                            <div class="border col-6 col-sm-4 blue height-8"></div>
+                            <div class="border col-6 col-sm-4 col-md-2 blue height-8"></div>
+                            <div class="border col-6 col-sm-4 col-md-2 blue height-8"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="border col-12 lime height-2"></div>
+                </div>
+            </div>
+            <div class="row p-4 text-center">
+                <h2>Ejercicio Offset</h2>
+            </div>
+            <div class="container text-center">
+                <div class="row" id="r1">
+                    <div class="fst-italic lime">
+                        <h2>Header</h2>
+                    </div>
+                </div>
+                <div class="row" id="r2">
+                    <div class="border col-6 col-md-3 lightblue height-8 offset-md-3" id="c1">
+                        1
+                    </div>
+                    <div class="border col-6 col-md-3 lightblue height-8" id="c2">
+                        2
+                    </div>
+                    <!-- obliga a saltar de fila -->
+                    <div class="w-100 visible-md"></div>
+                    <div class="border col-6 col-md-3 lightblue height-8" id="c3">
+                        3
+                    </div>
+                    <div class="border col-6 col-md-3 lightblue height-8 offset-md-6" id="c4">
+                        4
+                    </div>
+                </div>
+                <div class="row" id="r3">
+                    <div class="border col-6 col-md-3 lightgray height-8 order-md-4" id="ca">
+                        a
+                    </div>
+                    <div class="border col-6 col-md-3 lightgray height-8 order-md-3" id="cb">
+                        b
+                    </div>
+                    <div class="border col-6 col-md-3 lightgray height-8 order-md-2" id="cc">
+                        c
+                    </div>
+                    <div class="border col-6 col-md-3 lightgray height-8 order-md-1" id="cd">
+                        d
+                    </div>
+                </div>
+                <div class="row fst-italic" id="r4">
+                    <div class="bg-info d-none d-md-block">
+                        <h2>Desktop</h2>
+                    </div>
+                    <div class="bg-info d-none d-sm-block d-md-none">
+                        <h2>Tablet</h2>
+                    </div>
+                    <div class="bg-info d-sm-none">
+                        <h2>Mobile</h2>
+                    </div>
+                </div>
+                <div class="row" id="r5">
+                    <div class="border col-12 col-sm-6 col-md-3 sandybrown  order-md-4">
+                        :D
+                    </div>
+                    <div class="d-none d-sm-block col-6 col-md-3 sandybrown height-8 order-md-1 offset-md-3">
+                        :&#40;
+                    </div>
+                </div> 
+                <div class="row">
+                    <div class="d-none d-sm-block fst-italic lime">
+                        <h2>Footer</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row p-4 text-center">
+                <h2>Ejercicio Query</h2>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="border text-center text-sm-start fst-italic" id="header">Header</div>
+                </div>
+                <div class="row">
+                    <div class="border col-12 col-sm-6 col-md-4 fw-bold fs-1 text-start text-md-center" id="box-1">1</div>
+                    <div class="border col-12 col-sm-6 col-md-4 fw-bold fs-1 text-center text-sm-end text-md-center" id="box-2">2</div>
+                    <div class="border col-12 col-md-4 fw-bold fs-1 text-end text-sm-center" id="box-3">3</div>
+                </div>
+                <div class="row">
+                    <div class="border col-12 col-md-6 text-center text-md-end fst-italic yellow">Footer 1</div>
+                    <div class="border col-12 col-md-6 text-center text-md-start fst-italic yellow">Footer 1</div>
+                </div>
+            </div>
+            <div class="row p-4 text-center">
+                <h2>Ejercicio Maquetación con 'Cards'</h2>
+            </div>
+            <div class="container">
+                <div class="row bg-primary">
+                    <div class="text-white text-center">Cabecera</div>
+                </div>
+                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-2">
+                    <div class="col">
+                        <div class="card">
+                            <img src="Bootstrap.jpg" class="card-img-top" alt="Bootsrap Framework">
+                            <div class="card-body">
+                                <h5 class="card-title">Título</h5>
+                                <p class="card-text">
+                                    Texto de ejemplo, texto de ejemplo, texto de ejemplo, texto de ejemplo.
+                                </p>
+                                <a href="#" class="btn btn-primary">Más información.</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <img src="Bootstrap.jpg" class="card-img-top" alt="Bootsrap Framework">
+                            <div class="card-body">
+                                <h5 class="card-title">Título</h5>
+                                <p class="card-text">
+                                    Texto de ejemplo, texto de ejemplo, texto de ejemplo, texto de ejemplo.
+                                </p>
+                                <a href="#" class="btn btn-primary">Más información.</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <img src="Bootstrap.jpg" class="card-img-top" alt="Bootsrap Framework">
+                            <div class="card-body">
+                                <h5 class="card-title">Título</h5>
+                                <p class="card-text">
+                                    Texto de ejemplo, texto de ejemplo, texto de ejemplo, texto de ejemplo.
+                                </p>
+                                <a href="#" class="btn btn-primary">Más información.</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <img src="Bootstrap.jpg" class="card-img-top" alt="Bootsrap Framework">
+                            <div class="card-body">
+                                <h5 class="card-title">Título</h5>
+                                <p class="card-text">
+                                    Texto de ejemplo, texto de ejemplo, texto de ejemplo, texto de ejemplo.
+                                </p>
+                                <a href="#" class="btn btn-primary">Más información.</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <img src="Bootstrap.jpg" class="card-img-top" alt="Bootsrap Framework">
+                            <div class="card-body">
+                                <h5 class="card-title">Título</h5>
+                                <p class="card-text">
+                                    Texto de ejemplo, texto de ejemplo, texto de ejemplo, texto de ejemplo.
+                                </p>
+                                <a href="#" class="btn btn-primary">Más información.</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bun
+            dle.min.js"
+            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcX
+            n/tWtIaxVXM" crossorigin="anonymous"></script>
+        </body>
+ </html>

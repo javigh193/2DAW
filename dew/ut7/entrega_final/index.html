@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entrega final unidades 5, 6 y 7</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <!-- Formulario HTML con campos de texto y archivo -->
+    <form id="miFormulario">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required>
+        <div class="error-box" id="err-nombre"></div>
+        <br>
+        <label for="apellidos">Apellidos:</label>
+        <input type="text" id="apellidos" name="apellidos" required>
+        <div class="error-box" id="err-apellidos"></div>
+        <br>
+        <label for="nacimiento">Fecha de nacimiento:</label>
+        <input type="date" id="nacimiento" name="nacimiento" min="1900-01-01" required> 
+        <div class="error-box" id="err-nacimiento"></div>
+        <br>
+        <label for="dni">DNI:</label>
+        <input type="text" id="dni" name="dni" required>
+        <div class="error-box" id="err-dni"></div>
+        <br>
+        <label for="direccion">Dirección:</label>
+        <input type="text" id="direccion" name="direccion" required>
+        <div class="error-box" id="err-direccion"></div>
+        <br>
+        <label for="cp">Código Postal:</label>
+        <input type="text" id="cp" name="cp" inputmode="numeric" pattern="[0-9]{5}" required>
+        <div class="error-box" id="err-cp"></div>
+        <br>
+        <label for="provincia">Provincia:</label>
+        <select id="provincia" name="provincia" required></select>
+        <div class="error-box" id="err-provincia"></div>
+        <br>
+        <label for="municipio">Municipio:</label>
+        <select id="municipio" name="municipio" required></select>
+        <div class="error-box" id="err-municipio"></div>
+        <br>
+        <label for="telefono">Teléfono:</label>
+        <input type="tel" id="telefono" name="telefono" pattern="^\d{9}$" required>
+        <div class="error-box" id="err-telefono"></div>
+        <br>
+        <label for="correo">Correo electrónico:</label>
+        <input type="email" id="correo" name="correo" pattern=".+@[a-z]+\.(?:com|es)" required>
+        <div class="error-box" id="err-correo"></div>
+        <br>
+        <label for="comprobar-correo">Comprobación correo:</label>
+        <input type="email" id="comprobar-correo" name="comprobar-correo" pattern=".+@[a-z]+\.(?:com|es)" required>
+        <br>
+        <label for="condiciones">Acepto las condiciones generales del programa y la normativa sobre protección de datos.</label>
+        <input type="checkbox" id="condiciones" name="condiciones">
+        <div class="error-box" id="err-condiciones"></div>
+        <br>
+        <!-- Botón para enviar el formulario -->
+        <button type="button" onclick="checkFields()">Enviar</button>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TE02UT04_3</title>
+</head>
+<body>
+    <img data-src="img/original.jpg" src="img/miniatura.jpg" width="300">
+    <img data-src="img/img.png" src="img/miniatura.png" width="300">
+    <img data-src="img/img.webp" src="img/miniatura.webp" width="300">
+    <img data-src="img/img.avif" src="img/miniatura.avif" width="300">
+    <script>
+        function init() {
+            var imgDefer = document.getElementsByTagName('img');
+            for (var i = 0; i < imgDefer.length; i++) {
+                if(imgDefer[i].getAttribute('data-src')) {
+                    imgDefer[i].setAttribute('src',imgDefer[i].getAttribute('data-src'));
+                }
+            }
+        }
+        window.onload = init;
+    </script>
+</body>
+</html>

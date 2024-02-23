@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UT3-A1</title>
+    <link type="text/css" rel="stylesheet" href="css/styles.css"/>
+    <script src="js/load_images.js"></script>
+</head>
+<body>
+    <h1>Nginx + ngx_small_light</h1>
+    <form  id="ngx-light-form">
+        <label for="img-size">Tamaño</label>
+        <input type="text" id="img-size" name="img-size">
+        <label for="bor-width">Ancho del borde</label>
+        <input type="text" id="bor-width" name="bor-width">
+        <label for="bor-color">Color del borde</label>
+        <input type="text" id="bor-color" name="bor-color">
+        <label for="focus">Enfoque</label>
+        <input type="text" id="focus" name="focus">
+        <label for="blur">Desenfoque</label>
+        <input type="text" id="blur" name="blur">
+    </form>
+    <button onclick="load_images()">Generar imágenes</button>
+    <h2 id="img-title">Imagenes</h2>
+    <div id="img-container"></div>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio3</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .PostCard {
+            background-color: transparent;
+            width: 480px;
+            height: 360px;
+            perspective: 1000px;
+        }
+
+        .PostCardContents {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            transition: transform 0.8s;
+            transform-style: preserve-3d;
+        }
+
+        /* probé con rotate3d pero no me funcionó */
+        .PostCard:hover .PostCardContents {
+            transform: rotateY(180deg);
+        }
+
+        .front, .back {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            backface-visibility: hidden;
+        }
+
+        .back {
+            padding: 5%;
+            border: 2px solid black;
+            transform: rotateY(180deg);
+        }
+    </style>
+</head>
+<body>
+    <div class="PostCard">
+        <div class="PostCardContents">
+            <div class="front">
+                <img src="frogs.png" alt="Frogs Sumo" style="width: 480px; height: 360px;">
+            </div>
+            <div class="back">
+                <h1>Título: Frog Sumo</h1>
+                <h5>Autor: Ohara Koson</h5>
+                <h5>Fecha: Desconocida</h5>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

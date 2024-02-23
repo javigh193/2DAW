@@ -1,0 +1,9 @@
+@mixin new_card($class_name, $font_size, $color, $bg_color)
+    .card-#{$class_name}
+        font-size: $font_size
+        color: $color
+        background-color: $bg_color
+
+@include new_card('intrepida', 11pt, red, lightgray)
+@include new_card('clasica', 12pt, black, white)
+@include new_card('inversa', 9pt, orange, silver)

@@ -1,0 +1,45 @@
+@charset "UTF-8";
+/*Estilos para el contenedor general de mi página*/
+.container {
+  width: 99%;
+  margin: 0 auto;
+}
+
+/*Usando anidamiento crear la hoja de estilos para un menú */
+nav {
+  background-color: #9b6f91;
+  padding: 0.2rem;
+}
+nav ul li {
+  display: inline;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+nav ul li.active {
+  color: white;
+  font-weight: bold;
+}
+nav ul li:hover {
+  color: white;
+}
+nav ul li a {
+  text-decoration: none;
+}
+
+/*Estructura de anidamiento para la figura (cards)*/
+figure.card {
+  border: 0.1rem solid black;
+  border-radius: 1rem;
+  display: inline-block;
+  padding: 1rem;
+  width: 25%;
+}
+figure.card img {
+  border-radius: 1.6rem;
+  width: 100%;
+}
+figure.card figcaption {
+  font-size: 0.8rem;
+  margin: 0.5rem;
+  text-align: center;
+}/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>UT7 Actividad 3 - Ejemplo de text() como getter y como setter.</title>
+  <meta charset="UTF-8">
+  <script type="text/javascript" src="/medusa/eforma/campus/ruxitagentjs_ICA2NVfqru_10279231130031246.js" data-dtconfig="rid=RID_-1012759722|rpid=1241750431|domain=gobiernodecanarias.org|reportUrl=/medusa/eforma/campus/rb_bf29001mpg|app=6f32243ee21d715c|cuc=o9ygw9x5|mel=100000|featureHash=ICA2NVfqru|dpvc=1|ssv=4|lastModification=1704705103743|vcv=2|tp=500,50,0,1|rdnt=1|uxrgce=1|bp=3|agentUri=/medusa/eforma/campus/ruxitagentjs_ICA2NVfqru_10279231130031246.js"></script><script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script></script>
+<link rel="stylesheet" type="text/css" href="https://www3.gobiernodecanarias.org/educacion/cau_ce/cookies/cookieconsent.min.css"/><script  type="text/javascript" src="https://www3.gobiernodecanarias.org/educacion/cau_ce/cookies/cookieconsent.min.js"></script><script type="text/javascript" src="https://www3.gobiernodecanarias.org/educacion/cau_ce/cookies/cauce_cookie.js"></script><script type="text/javascript" src="https://www3.gobiernodecanarias.org/educacion/cau_ce/estadisticasweb/scripts/piwik-base.js"></script><script type="text/javascript" src="https://www3.gobiernodecanarias.org/educacion/cau_ce/estadisticasweb/scripts/piwik-eforma.js"></script></head>
+
+<body>
+
+
+  <p id="parrafo1">Texto del primer párrafo</p>
+
+  <table border="1">
+    <tr>
+      <td>celda 1,1</td>
+      <td>celda 1,2</td>
+      <td>celda 2,1</td>
+      <td>celda 2,2</td>
+    </tr>
+  </table>
+  <br>
+
+  <input type="button" value="Obtener el texto contenido en un párrafo" id="boton1"><br>
+  <input type="button" value="Modificar el texto de un párrafo" id="boton2"><br>
+  <input type="button" value="Modificar el texto de todos los elementos td de una tabla" id="boton3">
+</body>
+<script>
+    $("#boton1").click(() => {alert($("#parrafo1").text());});
+    $("#boton2").click(() => {$("#parrafo1").text("Nuevo contenido del párrafo.")});
+    $("#boton3").click(() => {$("td").each(
+        function(){
+            $(this).text(`Modificado contenido de la ${$(this).text()}`)
+        }
+    )}); 
+</script>
+</html>

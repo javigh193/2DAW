@@ -1,0 +1,13 @@
+label, input, select {
+    margin-bottom: 8px;
+}
+
+form {
+    padding: 14px;
+    border: solid black 2px;
+    background-color: lightcyan;
+}
+
+.error-box {
+    color: red;
+}

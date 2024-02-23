@@ -1,0 +1,79 @@
+
+#img1{
+    width: 60vw;
+    height: 60vw;
+    background-image: image-set(
+      url(img/original-1024.jpg) 3x,
+      url(img/original-600.jpg) 2x,
+      url(img/original.468.jpg) 1x
+    );
+}
+
+#img2{
+    width: 60vw;
+    height: 60vw;
+    background-image: image-set(
+      url(img/img-1024.png) 3x,
+      url(img/img-600.png) 2x,
+      url(img/img-468.png) 1x
+    );
+}
+
+#img3{
+    width: 60vw;
+    height: 60vw;
+    background-image: image-set(
+      url(img/img-1024.webp) 3x,
+      url(img/img-600.webp) 2x,
+      url(img/img-468.webp) 1x
+    );
+}
+
+#img4{
+    width: 60vw;
+    height: 60vw;
+    background-image: image-set(
+      url(img/img-1024.avif) 3x,
+      url(img/img-600.avif) 2x,
+      url(img/img-468.avif) 1x
+    );
+}
+
+/* Si es mayor que tamaño móvil*/
+@media (min-width:480px){
+    #img1{
+        background-image: image-set(
+          url(img/original.jpg) 3x,
+          url(img/original-1024.jpg) 2x,
+          url(img/original.600.jpg) 1x
+        );
+    }
+    #img2{
+        width: 60vw;
+        height: 60vw;
+        background-image: image-set(
+          url(img/img.png) 3x,
+          url(img/img-1024.png) 2x,
+          url(img/img-600.png) 1x
+        );
+    }
+    #img3{
+        width: 60vw;
+        height: 60vw;
+        background-image: image-set(
+          url(img/img.webp) 3x,
+          url(img/img-1024.webp) 2x,
+          url(img/img-600.webp) 1x
+        );
+    }
+    #img4{
+        width: 60vw;
+        height: 60vw;
+        background-image: image-set(
+          url(img/img.avif) 3x,
+          url(img/img-1024.avif) 2x,
+          url(img/img-600.avif) 1x
+        );
+    }
+}
+

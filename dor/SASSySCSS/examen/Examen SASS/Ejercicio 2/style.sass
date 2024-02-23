@@ -1,0 +1,11 @@
+@use 'sass:color'
+
+@mixin headers($color, $font_size, $reduction_rate)
+    $new_size: $font_size
+    @for $i from 1 through 6
+        h#{$i}
+            color: color.adjust($color, $lightness: $i*10)
+            font-size: $new_size
+            $new_size: $new_size * $reduction_rate / 100
+
+@include headers(#919b09, 5rem, 70)

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio3</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .wall {
+            background-color: beige;
+            width: 100%;
+            height: 100vh;
+        }
+
+
+        /* probé con rotate3d pero no me funcionó */
+        #frogs-picture:hover {
+            transform: translateY(100vh);
+        }
+
+        #frogs-picture {
+            transition: transform 1.4s;
+        }
+    </style>
+</head>
+<body>
+    <div class="wall">
+        <img id="frogs-picture" src="frogs.png" alt="Frogs Sumo" style="width: 480px; height: 360px;">
+    </div>
+</body>
+</html>

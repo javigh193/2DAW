@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tarea 1 - DWEC03 - Principal</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="functions.js"></script>
+</head>
+<!--Por problemas de seguridad del navegador no funcionan facilmente los métodos 
+de escritura entre ventanas. Utilizo el sistema de escuchador de funciones y post
+que vimos en los ejemplos de clase-->
+<body onload="setEventListener()">
+    <button onclick="openNewWindow()">Abrir Nueva Ventana</button>
+    <div id="message-container"></div>
+</body>
+</html>

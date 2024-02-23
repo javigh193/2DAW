@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <title>UT7-A8</title>
+</head>
+<body>
+    <ul>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+        <li>Item 4</li>
+    </ul>
+    <button id="btn1" value="restore list items">Restore list items</button>
+    <button id="btn2" value="append item">Append item</button>
+    <button id="btn3" value="prepend item">Prepend item</button>
+</body>
+<script>
+    $("li").click(function(){$(this).empty()});
+    $("#btn1").click(() => {
+        $("li").each(function(index){
+            $(this).text(`Item ${index + 1}`)
+        })
+    });
+    $("#btn2").click(() => {
+        $("ul").append(`<li>Item ${$("ul").children("li").length + 1}</li>`);
+        $("li:last-child").click(function(){$(this).empty()});
+        })
+    $("#btn3").click(() => {
+        $("ul").prepend(`<li></li>`);
+        $("li:first-child").click(function(){$(this).empty()});
+        $("li").each(function(index){
+            $(this).text(`Item ${index + 1}`)
+        });
+    })
+</script>
+</html>

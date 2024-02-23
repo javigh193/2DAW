@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Falling Button</title>
+    <style>
+        #myButton {
+            margin-left: 5%;
+            padding: 1%;
+            background-color: orange;
+            font-size: large;
+            font-weight: bold;
+        }
+        /* Al estar asociada la animación a la pseudoclase, depende de que el ratón
+        permanezca sobre el elemento. Con eventos de JS sería sencillo resolver este
+        problema. */
+        #myButton:hover {
+            animation: rotate 1s ease 0s 1 normal forwards, 
+                       fall 2s ease 1s 1 normal forwards;
+        }
+        @keyframes rotate {
+            0% {
+                transform: rotate(0);
+            }
+            100% {
+                transform: rotate(40deg);
+            }
+        }
+        @keyframes fall {
+            0% {
+                transform: translateY(0vw);
+            }
+            100% {
+                transform: translateY(100vw);
+            }
+        }
+    </style>
+</head>
+<body>
+    <button id="myButton">
+        Click Me!
+    </button>
+</body>
+</html>

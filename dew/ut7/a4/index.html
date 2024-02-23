@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <title>UT7-A4</title>
+</head>
+<body>
+    <table>
+        <tr>
+            <td>Fila 1</td>
+        </tr>
+        <tr>
+            <td>Fila 2</td>
+        </tr>
+    </table>
+    <input type="button" value="add border" id="boton1"><br>
+    <input type="button" value="get border" id="boton2"><br>
+    <input type="button" value="remove border" id="boton3">
+    <script>
+        $("#boton1").click(() => {$("table").attr("border", 1)});
+        $("#boton2").click(() => {alert($("table").attr("border"))});
+        $("#boton3").click(() => {$("table").removeAttr("border")});
+    </script>
+</body>
+</html>

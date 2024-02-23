@@ -1,0 +1,15 @@
+<h1>My Travel Bucket List</h1>
+
+<h2>Places I'd Like to Visit</h2>
+<ul>
+  <% @wished.each do |place| %>
+    <li><%= place.name %></li>
+  <% end %>
+</ul>
+
+<h2>Places I've Already Been To</h2>
+<ul>
+  <% @visited.each do |place| %>
+    <li><%= place.name %></li>
+  <% end %>
+</ul>

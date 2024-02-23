@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio1</title>
+    <style>
+        #square {
+            margin-top: 25%;
+            margin-left: 30%;
+            width: 200px;
+            height: 200px;
+            background: orange;
+        }
+
+        #square:hover {
+            animation: deformation 3s ease 0s 1 normal forwards;
+        }
+
+        @keyframes deformation{
+            from{
+                transform: rotate(0deg) scale(1, 1) skew(0deg, 0deg);
+            }   
+            to{
+                transform: rotate(150deg) scale(2, 2) skew(10deg, 20deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="square">
+        Pasa el ratón
+    </div>
+</body>
+</html>

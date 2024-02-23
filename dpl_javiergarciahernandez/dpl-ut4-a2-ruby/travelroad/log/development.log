@@ -1,0 +1,60 @@
+Started GET "/" for 127.0.0.1 at 2024-01-25 16:27:49 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (95.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as */*
+  Rendering /home/pc28-dpl/.rvm/gems/ruby-3.3.0/gems/railties-7.1.3/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/pc28-dpl/.rvm/gems/ruby-3.3.0/gems/railties-7.1.3/lib/rails/templates/rails/welcome/index.html.erb (Duration: 1.6ms | Allocations: 377)
+Completed 200 OK in 28ms (Views: 8.6ms | ActiveRecord: 0.0ms | Allocations: 7776)
+
+
+Started GET "/" for 127.0.0.1 at 2024-01-25 16:31:52 +0000
+Processing by PlacesController#index as */*
+  Rendering layout layouts/application.html.erb
+  Rendering places/index.html.erb within layouts/application
+  [1m[36mPlace Load (1.2ms)[0m  [1m[34mSELECT "places".* FROM "places" WHERE "places"."visited" = $1[0m  [["visited", false]]
+  ↳ app/views/places/index.html.erb:5
+  [1m[36mPlace Load (0.4ms)[0m  [1m[34mSELECT "places".* FROM "places" WHERE "places"."visited" = $1[0m  [["visited", true]]
+  ↳ app/views/places/index.html.erb:12
+  Rendered places/index.html.erb within layouts/application (Duration: 123.3ms | Allocations: 8760)
+  Rendered layout layouts/application.html.erb (Duration: 685.4ms | Allocations: 98567)
+Completed 200 OK in 1023ms (Views: 624.2ms | ActiveRecord: 303.7ms | Allocations: 121737)
+
+
+Started GET "/" for 127.0.0.1 at 2024-01-25 16:46:25 +0000
+Processing by PlacesController#index as */*
+  Rendering layout layouts/application.html.erb
+  Rendering places/index.html.erb within layouts/application
+  [1m[36mPlace Load (0.3ms)[0m  [1m[34mSELECT "places".* FROM "places" WHERE "places"."visited" = $1[0m  [["visited", false]]
+  ↳ app/views/places/index.html.erb:5
+  [1m[36mPlace Load (0.3ms)[0m  [1m[34mSELECT "places".* FROM "places" WHERE "places"."visited" = $1[0m  [["visited", true]]
+  ↳ app/views/places/index.html.erb:12
+  Rendered places/index.html.erb within layouts/application (Duration: 22.8ms | Allocations: 8569)
+  Rendered layout layouts/application.html.erb (Duration: 175.8ms | Allocations: 42121)
+Completed 200 OK in 284ms (Views: 177.8ms | ActiveRecord: 22.6ms | Allocations: 61888)
+
+
+Started GET "/" for 127.0.0.1 at 2024-01-25 16:47:29 +0000
+Processing by PlacesController#index as */*
+  Rendering layout layouts/application.html.erb
+  Rendering places/index.html.erb within layouts/application
+  [1m[36mPlace Load (0.3ms)[0m  [1m[34mSELECT "places".* FROM "places" WHERE "places"."visited" = $1[0m  [["visited", false]]
+  ↳ app/views/places/index.html.erb:5
+  [1m[36mPlace Load (0.3ms)[0m  [1m[34mSELECT "places".* FROM "places" WHERE "places"."visited" = $1[0m  [["visited", true]]
+  ↳ app/views/places/index.html.erb:12
+  Rendered places/index.html.erb within layouts/application (Duration: 22.1ms | Allocations: 8569)
+  Rendered layout layouts/application.html.erb (Duration: 96.7ms | Allocations: 41466)
+Completed 200 OK in 175ms (Views: 96.9ms | ActiveRecord: 11.1ms | Allocations: 61233)
+
+
+Started GET "/" for 127.0.0.1 at 2024-01-25 17:07:44 +0000
+Processing by PlacesController#index as */*
+  Rendering layout layouts/application.html.erb
+  Rendering places/index.html.erb within layouts/application
+  [1m[36mPlace Load (1.0ms)[0m  [1m[34mSELECT "places".* FROM "places" WHERE "places"."visited" = $1[0m  [["visited", false]]
+  ↳ app/views/places/index.html.erb:5
+  [1m[36mPlace Load (0.4ms)[0m  [1m[34mSELECT "places".* FROM "places" WHERE "places"."visited" = $1[0m  [["visited", true]]
+  ↳ app/views/places/index.html.erb:12
+  Rendered places/index.html.erb within layouts/application (Duration: 231.7ms | Allocations: 8571)
+  Rendered layout layouts/application.html.erb (Duration: 243.7ms | Allocations: 11255)
+Completed 200 OK in 878ms (Views: 266.8ms | ActiveRecord: 104.8ms | Allocations: 31023)
+
+

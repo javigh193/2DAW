@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div style="padding: 10vw;">
+        <form id="poll1" name="poll1" action="">
+            <!-- Checkboxes -->
+            <h2>¿Cuál de las siguientes frutas son rojas?</h2>
+                <input type="checkbox" id="fruit1" name="fruit1" value="Manzana">
+                <label for="fruit1">Manzana</label><br>
+                <input type="checkbox" id="fruit2" name="fruit2" value="Plátano">
+                <label for="fruit2">Plátano</label><br>
+                <input type="checkbox" id="fruit3" name="fruit3" value="Fresa">
+                <label for="fruit3">Fresa</label><br>
+                <input type="checkbox" id="fruit4" name="fruit4" value="Mango">
+                <label for="fruit4">Mango</label>
+                <br/>
+                <br/>
+                <button id="check-fruits">Comprobar</button>
+            <h2>¿Cuál de las siguientes opciones es un color primario?</h2>
+                <input type="radio" id="rojo" name="primary_colors" value="Rojo">
+                <label for="rojo">Rojo</label><br>
+                <input type="radio" id="verde" name="fav_language" value="Verde">
+                <label for="verde">Verde</label><br>
+                <input type="radio" id="naranja" name="fav_language" value="Naranja">
+                <label for="naranja">Naranja</label><br/>
+                <input type="radio" id="marron" name="fav_language" value="Marron">
+                <label for="marron">Marrón</label>
+                <br/>
+                <br/>
+                <button id="check-color">Comprobar</button> 
+            <h2>Selecciona un día de la semana que comience por la letra "J".</h2>
+                <label for="week-days">Selecciona un día:</label>
+                <select name="week-days" id="week-days">
+                <option value="lunes">Lunes</option>
+                <option value="martes">Martes</option>
+                <option value="miercoles">Miércoles</option>
+                <option value="jueves">Jueves</option>
+                </select>
+                <br/>
+                <br/> 
+                <button id="check-day">Comprobar</button>
+                <br/>
+                <br/>
+                <button id="getResult">Resultado</button>
+        </form>
+    </div>
+</body>
+</html>

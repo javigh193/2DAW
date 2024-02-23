@@ -1,0 +1,87 @@
+.pink-bg {
+    background-color: deeppink;
+}
+.height-2 {
+   height: 2vh;
+}
+    .height-4 {
+    height: 4vh;
+    }
+    .height-8 {
+    height: 8vh;
+    }
+    .height-16 {
+    height: 16vh;
+    }
+    .height-24 {
+    height: 24vh;
+    }
+    @media (max-width: 575px) {
+    .height-fluid{
+    height: 4vh;
+    }
+    }
+
+.lightgray {
+    background: #cccccc;
+}
+.lightblue {
+    background: #87aade;
+}
+.sandybrown {
+    background: sandybrown;
+}
+.blue {
+    background: blue;
+}
+.red {
+    background: red;
+}
+.lime {
+    background: lime;
+}
+.yellow {
+    background: yellow;
+}
+
+#box-1 {
+    background: red;
+}
+#box-2 {
+    background: red;
+}
+
+#box-3 {
+    background: red;
+}
+
+#header {
+    background: lime;
+}
+.visible-md {
+    visibility: hidden;
+}
+
+@media (min-width: 768px) {
+    .visible-md {
+        visibility: visible;
+    }
+}
+
+@media (max-width: 575px) {
+    #box-2 {
+        background: lightskyblue;
+    }
+    #header {
+        background: sandybrown;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+    #box-3 {
+        background: lime;
+    }
+    #header {
+        background: lightskyblue;
+    }
+}

@@ -1,0 +1,12 @@
+body {
+    width: fit-content;
+    padding: 5%;
+    margin: 2%;
+    border: solid black 2px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}

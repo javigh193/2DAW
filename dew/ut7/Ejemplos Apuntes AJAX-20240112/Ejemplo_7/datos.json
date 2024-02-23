@@ -1,0 +1,92 @@
+[
+  {
+    "id": 1,
+    "nombrecentro": "IES Ramon Mª Aller Ulloa",
+    "localidad": "Lalin",
+    "provincia": "Pontevedra",
+    "telefono": "986780114",
+    "fechavisita": "2010-11-26",
+    "numvisitantes": 90
+  },
+  {
+    "id": 2,
+    "nombrecentro": "IES A Piringalla",
+    "localidad": "Lugo",
+    "provincia": "Lugo",
+    "telefono": "982212010",
+    "fechavisita": "2010-11-26",
+    "numvisitantes": 85
+  },
+  {
+    "id": 3,
+    "nombrecentro": "IES San Clemente",
+    "localidad": "Santiago de Compostela",
+    "provincia": "A Coruña",
+    "telefono": "981580496",
+    "fechavisita": "2010-11-26",
+    "numvisitantes": 60
+  },
+  {
+    "id": 4,
+    "nombrecentro": "IES de Teis",
+    "localidad": "Vigo",
+    "provincia": "Pontevedra",
+    "telefono": "986373811",
+    "fechavisita": "2010-11-27",
+    "numvisitantes": 72
+  },
+  {
+    "id": 5,
+    "nombrecentro": "IES Leliadoura",
+    "localidad": "Ribeira",
+    "provincia": "A Coruña",
+    "telefono": "981874633",
+    "fechavisita": "2010-11-25",
+    "numvisitantes": 0
+  },
+  {
+    "id": 6,
+    "nombrecentro": "IES Cruceiro Baleares",
+    "localidad": "Culleredo",
+    "provincia": "A Coruña",
+    "telefono": "981660700",
+    "fechavisita": "2010-11-26",
+    "numvisitantes": 30
+  },
+  {
+    "id": 7,
+    "nombrecentro": "IES Leliadoura",
+    "localidad": "Ribeira",
+    "provincia": "A Coruña",
+    "telefono": "981874633",
+    "fechavisita": "2010-11-25",
+    "numvisitantes": 50
+  },
+  {
+    "id": 8,
+    "nombrecentro": "IES Cruceiro Baleares",
+    "localidad": "Culleredo",
+    "provincia": "A Coruña",
+    "telefono": "981660700",
+    "fechavisita": "2010-11-26",
+    "numvisitantes": 30
+  },
+  {
+    "id": 9,
+    "nombrecentro": "IES As Lagoas",
+    "localidad": "Ourense",
+    "provincia": "Ourense",
+    "telefono": "988391325",
+    "fechavisita": "2010-11-26",
+    "numvisitantes": 35
+  },
+  {
+    "id": 10,
+    "nombrecentro": "IES As Fontiñas",
+    "localidad": "Santiago de Compostela",
+    "provincia": "A Coruña",
+    "telefono": "981573440",
+    "fechavisita": "2010-11-27",
+    "numvisitantes": 64
+  }
+]

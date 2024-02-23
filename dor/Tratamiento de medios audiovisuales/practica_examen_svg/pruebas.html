@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <svg width="300" height="100">
+        <rect x="0" y="0" width="300" height="100" stroke="black" stroke-width="1" />
+        <circle cx="0" cy="50" r="15" fill="blue">
+            <animate 
+                attributeName="cx"
+                from="0"
+                to="500"
+                dur="5s"
+                repeatCount="indefinite" />
+        </circle>    
+    </svg>
+    <svg width="300" height="100">
+        <title>SVG SMIL Animate with transform</title>
+        <rect x="0" y="0" width="300" height="100" stroke="black" stroke-width="1" />
+        <rect x="0" y="50" width="15" height="34" fill="blue" stroke="black" stroke-width="1">
+            <animateTransform
+            attributeName="transform"
+            begin="0s"
+            dur="5s"
+            type="rotate"
+            from="0 60 60"
+            to="360 60 60"
+            repeatCount="indefinite" />
+        </rect>
+       </svg>
+       
+    <svg widt="300" height="100">
+        <rect x="0" y="0" width="300" height="100" />
+        <rect x="0" y="50" width="15" height="34" fill="blue">
+            <animateMotion
+                path="m 0 0 h 10 v 10 h 10"
+                dur="2s"
+                repeatCount="indefinite"/>
+        </rect>
+    </svg>
+</body>
+</html>
